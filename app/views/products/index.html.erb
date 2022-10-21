@@ -1,0 +1,20 @@
+<h1 class="title">Products</h1>
+<h2 class="subtitle", id='total_product_price'>
+  Total price: <%= number_to_currency @total_product_price %>
+</h2>
+
+<%= render Bali::Link::Component.new(name: 'New product', href: new_product_path, modal: true, class: 'button is-primary') %>
+<hr>
+
+<%= turbo_frame_tag 'products' do %>
+  <div class="columns">
+    <div class="column is-1"></div>
+    <div class="column">NAME</div>
+    <div class="column">BRAND</div>
+    <div class="column">DESCRIPTION</div>
+    <div class="column">PRICE</div>
+  </div>
+  <% @products.each do |product| %>
+    <%= render product %>
+  <% end %>
+<% end %>

@@ -4,7 +4,12 @@
 <hr>
 
 <%= turbo_frame_tag 'brands' do %>
+  <div class="columns">
+    <div class="column is-1"></div>
+    <div class="column">NAME</div>
+  </div>
+
   <% @brands.each do |brand| %>
-    <%= render 'brand', brand: brand %>
+    <%= render brand %>
   <% end %>
 <% end %>

@@ -1,0 +1,19 @@
+<%= turbo_frame_tag dom_id(product) do %>
+  <div class="columns">
+    <div class="column is-1">
+      <%= render Bali::Link::Component.new(icon_name: 'edit', href: edit_product_path(product), modal: true) %>
+    </div>
+    <div class="column">
+      <%= product.name %>
+    </div>
+    <div class="column">
+      <%= product.brand&.name %>
+    </div>
+    <div class="column">
+      <%= product.description %>
+    </div>
+    <div class="column">
+      <%= product.price %>
+    </div>
+  </div>
+<% end %>
