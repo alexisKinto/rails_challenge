@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Technical challenge details
+* Rails 7.0.4
+* Ruby 3.1.2
+* Hotwire
+* Bulma CSS Framework
+* Bali View Components (for modal, notification components and form builder)
 
-Things you may want to cover:
+## Install
 
-* Ruby version
+* git clone this repo
+* bundle install
+* yarn install && yarn build
+* bin/dev (to run server)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## routes
+* Create brands on http://127.0.0.1:3000/brands
+* Create products on http://127.0.0.1:3000/products
