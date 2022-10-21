@@ -11,7 +11,14 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body>
-    <%= yield %>
+ <body data-controller="modal">
+    <section class="section">
+      <div class="container">
+        <%= render 'layouts/notifications' %>
+        <%= yield %>
+      </div>
+    </section>
+
+    <%= render Bali::Modal::Component.new(active: false) %>
   </body>
 </html>

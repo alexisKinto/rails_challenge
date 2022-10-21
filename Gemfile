@@ -45,6 +45,12 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 # gem "sassc-rails"
 
+# Bulma CSS Framework
+gem 'bulma-rails', '~> 0.9.4'
+
+# ViewComponents
+gem 'bali_view_components', github: 'Grupo-AFAL/bali-view-components', branch: 'main'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
