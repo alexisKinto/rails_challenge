@@ -3,6 +3,7 @@
     <%= notice %>
   <% end %>
 <% end %>
+
 <% if alert %>
   <%= render Bali::Notification::Component.new(type: :danger) do %>
     <%= alert %>
