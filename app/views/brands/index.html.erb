@@ -1,0 +1,10 @@
+<h1 class="title">Brands</h1>
+
+<%= render Bali::Link::Component.new(name: 'New brand', href: new_brand_path, modal: true, class: 'button is-primary') %>
+<hr>
+
+<%= turbo_frame_tag 'brands' do %>
+  <% @brands.each do |brand| %>
+    <%= render 'brand', brand: brand %>
+  <% end %>
+<% end %>

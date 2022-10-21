@@ -1,0 +1,6 @@
+<%= form_with(model: brand) do |form| %>
+  <%= form.text_field_group :name %>
+  
+  <br>
+  <%= form.submit_actions 'Save', modal: true, class: 'button is-primary' %>
+<% end %>
