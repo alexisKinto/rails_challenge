@@ -2,7 +2,7 @@ class BrandsController < ApplicationController
   before_action :set_brand, only: %i[edit update destroy]
 
   def index
-    @brands = Brand.all
+    @brands = Brand.alphabetical
   end
 
   def new

@@ -1,0 +1,10 @@
+<%= turbo_stream.remove dom_id(@product) %>
+
+<%= turbo_stream.update 'total_product_price' do %>
+  Total price: <%= number_to_currency @total_product_price %>
+<% end %>
+
+
+<%= turbo_stream.replace 'modal-template' do %>
+  <%= render Bali::Modal::Component.new(active: false) %>
+<% end %>
