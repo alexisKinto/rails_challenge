@@ -3,6 +3,7 @@
   "private": "true",
   "dependencies": {
     "@hotwired/stimulus": "^3.1.0",
+    "@hotwired/turbo-rails": "^7.2.4",
     "bali-view-components": "https://github.com/Grupo-AFAL/bali-view-components",
     "esbuild": "^0.15.12"
   },

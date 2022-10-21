@@ -12,6 +12,14 @@
   </head>
 
  <body data-controller="modal">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <%= link_to "All Brands", brands_path, class: 'navbar-item' %>
+        </div>
+      </div>
+    </nav>
+
     <section class="section">
       <div class="container">
         <%= render 'layouts/notifications' %>

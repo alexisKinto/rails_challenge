@@ -1,0 +1,5 @@
+<%= turbo_stream.remove dom_id(@brand) %>
+
+<%= turbo_stream.replace 'modal-template' do %>
+  <%= render Bali::Modal::Component.new(active: false) %>
+<% end %>

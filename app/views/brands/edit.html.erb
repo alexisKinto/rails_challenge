@@ -1,0 +1,6 @@
+<%= render Bali::PageHeader::Component.new(title: 'Edit Brand') do %>
+  <%= render Bali::DeleteLink::Component.new(name: 'Delete', href: @brand, confirm: 'Are you sure you want to delete this brand?') %>
+<% end %>
+
+
+<%= render "form", brand: @brand %>
